@@ -1,4 +1,5 @@
 def prime_checker(n):
+
 	if n==2:
 		return True
 	if n<1:
@@ -9,4 +10,18 @@ def prime_checker(n):
 			return False
 	return True
 
-print(prime_checker(9))
+#check for prime numbers between zero and n
+
+prime = []
+for m in range (100):
+	if prime_checker(m):
+		prime.append(m)
+
+print(prime)
+
+
+
+
+
+
+
