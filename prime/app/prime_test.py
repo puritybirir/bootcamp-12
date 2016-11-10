@@ -17,6 +17,10 @@ class PrimeTestCase(unittest.TestCase):
 	#checks if number is one
 	def test_one(self):
 		self.assertFalse(prime_checker(1), "One is not a prime number.")
+	def test_two(self):
+		self.assertTrue(prime_checker(2), "Two is a prime number")
+	def test_if_number_is_even(self):
+		self.assertFalse(prime_checker(4), "Number is not prime")
 
 
 
