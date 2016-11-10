@@ -2,7 +2,7 @@ def prime_checker(n):
 
 	if n==2:
 		return True
-	if n<1:
+	if n<=1:
 		return False
 
 	for m in range(2, int(n**0.5) + 1):
@@ -12,12 +12,12 @@ def prime_checker(n):
 
 #check for prime numbers between zero and n
 
-prime = []
-for m in range (100):
-	if prime_checker(m):
-		prime.append(m)
-
-print(prime)
+def generate_primes(n):
+	prime = []
+	for i in range (1,n+1):
+		if prime_checker(i):
+			prime.append(i)
+			return primes
 
 
 

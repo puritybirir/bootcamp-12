@@ -1,4 +1,4 @@
-import prime_checker
+from primee import prime_checker
 import unittest
 
 class PrimeTestCase(unittest.TestCase):
