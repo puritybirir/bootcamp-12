@@ -12,5 +12,10 @@ def words(string):
       if key == string_words[i]:
         count = count+1
       i = i+1
-    results[key]=count
+    
+    if key.isdigit():
+      results[int(key)]=count
+    else:
+      results[key]=count
+      
   return results
